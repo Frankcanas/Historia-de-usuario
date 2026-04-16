@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Desarrollador Junior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Frank Luis Cañas Bolaño</h1>
+        <nav>
+            <input type="checkbox" id="menu-check">
+
+            <label for="menu-check" class="menu-hamburguesa">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="mascotas.html" class="btn-nav">Mis Mascotas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                
+                <div class="content-wrapper">
+                    <p>
+                        Soy un apasionado por la tecnología, el desarrollo de software y el hardware, actualmente formándome como <strong>Desarrollador Junior</strong> con un enfoque especial en el ecosistema de <strong>Python</strong>.
+                    </p>
+                    <p>
+                        A lo largo de mi formación, he desarrollado proyectos que van desde sistemas de gestión de inventarios hasta recreaciones de juegos clásicos como <em>Space Impact</em>. Mi enfoque es crear soluciones lógicas, eficientes y fáciles de usar.
+                    </p>
+                    
+                    <h3>Lo que me define:</h3>
+                    <ul>
+                        <li><strong>Aprendizaje constante:</strong> Me encanta enfrentar retos técnicos en entornos Linux, Windows y Android.</li>
+                        <li><strong>Atención al detalle:</strong> Aplico la misma precisión al programar que al reparar hardware.</li>
+                        <li><strong>Intereses:</strong> Seguidor del Junior, fan de la ciencia ficción y jugador competitivo de Valorant y LoL.</li>
+                    </ul>
+                </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+                <div class="proyectos-grid">
+        
+                    <article class="proyecto-card">
+                        <h3>Sistema de Inventario</h3>
+                        <p>Desarrollado en Python para la gestión de productos y stock.</p>
+                        <a href="https://github.com/Frankcanas/Inventario.git" target="_blank">Ver Repositorio</a>
+                    </article>
+
+                    <article class="proyecto-card">
+                        <h3>Sistema de Estudiantes</h3>
+                        <p>Aplicación en Python enfocada en el control y registro académico.</p>
+                        <a href="https://github.com/Frankcanas/prueba-desempe-o.git" target="_blank">Ver Repositorio</a>
+                    </article>
+
+                    <article class="proyecto-card">
+                        <h3>Validador de Notas</h3>
+                        <p>Herramienta lógica para el cálculo y validación de promedios.</p>
+                        <a href="https://github.com/Frankcanas/Validador-de-Notas.git" target="_blank">Ver Repositorio</a>
+                    </article>
+
+                </div>
+        </section>
+
+        <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivo">Motivo del contacto:</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="proyecto">Propuesta de proyecto</option>
+                            <option value="empleo">Oferta de empleo</option>
+                            <option value="saludo">Solo quería saludar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Frank Cañas - Hecho con código y pasión.</p>
+    </footer>
+
+</body>
+</html>
