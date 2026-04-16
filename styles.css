@@ -1,4 +1,4 @@
-/* --- 1. CONFIGURACIÓN GENERAL --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ h1, h2, h3, nav a {
     font-weight: 600;
 }
 
-/* --- 2. HEADER Y NAVEGACIÓN (ESCRITORIO) --- */
+
 header {
     max-width: 1200px;
     margin: 0 auto 20px auto;
@@ -32,7 +32,7 @@ header {
     align-items: center;
 }
 
-/* CORRECCIÓN: Quitamos el display: none de aquí para que en PC se vea */
+
 header nav ul {
     display: flex; 
     flex-direction: row;
@@ -54,11 +54,11 @@ nav a:hover { color: #3498db; }
 
 #sobre-mi ul {
     margin-top: 15px;
-    padding-left: 25px; /* Esto le da el "aire" necesario a la derecha */
+    padding-left: 25px; 
 }
 
 #sobre-mi li {
-    margin-bottom: 8px; /* Separa un poco los puntos para que sea más legible */
+    margin-bottom: 8px; 
 }
 
 .btn-nav {
@@ -73,16 +73,16 @@ input, select, textarea {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: inherit; /* Para que usen la misma letra del body */
+    font-family: inherit; 
 }
 
-/* Estilo específico para la caja de texto */
+
 textarea {
-    resize: vertical; /* Permite al usuario agrandarlo hacia abajo pero no hacia los lados */
+    resize: vertical; 
     min-height: 100px;
 }
 
-/* Un pequeño toque para que el select no se vea tan simple */
+
 select {
     cursor: pointer;
     background-color: white;
@@ -90,12 +90,12 @@ select {
 
 
 
-/* Ocultamos el checkbox y la hamburguesa en PC */
+
 #menu-check, .menu-hamburguesa {
     display: none;
 }
 
-/* --- 3. GRID DE PROYECTOS Y MASCOTAS --- */
+
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -124,10 +124,10 @@ select {
 }
 
 .mascotas-flex-grid, .proyectos-grid, section {
-    max-width: 1200px; /* Evita que se estire demasiado en monitores grandes */
-    margin-left: auto;  /* Estos dos centran el bloque en la pantalla */
+    max-width: 1200px; 
+    margin-left: auto;  
     margin-right: auto;
-    width: 95%;        /* Deja un pequeño margen en pantallas medianas */
+    width: 95%;        
 }
 
 .mascota-card {
@@ -148,7 +148,7 @@ select {
 
 .mascota-card img:hover { transform: scale(1.05); }
 
-/* --- 4. SECCIONES Y FORMULARIO --- */
+
 section {
     background: #fff;
     margin-bottom: 20px;
@@ -181,14 +181,14 @@ button {
     cursor: pointer;
 }
 
-/* --- 5. RESPONSIVE (TABLETS) --- */
+
 @media (max-width: 768px) {
     .mascotas-flex-grid {
         grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* --- 6. RESPONSIVE (MÓVIL Y MENÚ HAMBURGUESA) --- */
+
 @media (max-width: 480px) {
     header {
         position: relative; 
@@ -212,7 +212,7 @@ button {
         border-radius: 2px;
     }
 
-    /* Aquí SÍ escondemos el menú para el móvil */
+
     header nav ul {
         display: none; 
         flex-direction: column;
@@ -226,7 +226,7 @@ button {
         border-radius: 0 0 8px 8px;
     }
 
-    /* Se muestra solo cuando el check está activo */
+    
     #menu-check:checked ~ ul {
         display: flex;
     }
