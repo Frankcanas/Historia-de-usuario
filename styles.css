@@ -1,4 +1,17 @@
 
+:root {
+    --primario: #2c3e50;
+    --secundario: #3498db;
+    --acento: #e67e22;
+    --fondo: #f4f4f9;
+    --blanco: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +21,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    font-size: 1rem;
+    background-color: var(--fondo);
     color: #333;
     padding: 20px;
 }
 
 h1, h2, h3, nav a {
-    font-family: 'Poppins', sans-serif; /* Fuente para títulos y menú */
+    font-family: 'Poppins', sans-serif; 
     font-weight: 600;
 }
 
@@ -182,62 +196,39 @@ button {
 }
 
 
-@media (max-width: 768px) {
-    .mascotas-flex-grid {
+button:hover {
+    background: #3498db;
+}
+
+/* This media query adjusts the design for tablets in the pets project */
+
+@media (max-width: 1024px) {
+    .proyectos-grid {
         grid-template-columns: repeat(2, 1fr); 
+    }
+    .mascotas-flex-grid {
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
+/* This media query adjusts the design for mobile devices, making the menu display in column and projects and pets display in one or two columns respectively to improve readability and usability on small screens. */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     header {
-        position: relative; 
-        flex-direction: row; 
-        justify-content: space-between;
+        flex-direction: column; 
+        gap: 15px;
     }
-
-    .menu-hamburguesa {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .menu-hamburguesa span {
-        display: block;
-        width: 30px;
-        height: 4px;
-        background-color: white;
-        border-radius: 2px;
-    }
-
 
     header nav ul {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #2c3e50;
-        padding: 20px 0;
-        z-index: 1000;
-        border-radius: 0 0 8px 8px;
+        flex-direction: column; 
+        gap: 10px;
     }
 
-    
-    #menu-check:checked ~ ul {
-        display: flex;
-    }
-
-    header nav ul li {
-        width: 100%;
-        text-align: center;
-        margin: 15px 0;
+    .proyectos-grid {
+        grid-template-columns: 1fr; 
     }
 
     .mascotas-flex-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
